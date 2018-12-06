@@ -17,9 +17,12 @@ public class PlayerController : MonoBehaviour
     public GameObject healthBar;
     public float currentHealth;
     public float maxHealth;
+    public string ammotype;
 
     public float CurrentHealth { get { return currentHealth; } set { currentHealth = value; } }
     public float MaxHealth { get { return maxHealth; } set { maxHealth = value; } }
+    public string AmmoType { get { return ammotype; } set { ammotype = value; } }
+    public GameObject Shot { get { return shot; } set { shot = value; } }
 
     void Awake()
     {
@@ -28,6 +31,7 @@ public class PlayerController : MonoBehaviour
         playerRigidbody = GetComponent<Rigidbody>();
         currentHealth = maxHealth;
         anim = GetComponent<Animator>();
+        ammotype = "bullet";
     }
 
     private void Update()

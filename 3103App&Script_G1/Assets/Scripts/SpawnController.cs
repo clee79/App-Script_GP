@@ -26,8 +26,8 @@ public class SpawnController : MonoBehaviour
         {
             if (i != null)
             {
-                i.Move(currentPos);                
-                i.Attack(currentPos);
+                //i.Move(currentPos);                
+                //i.Attack(currentPos);
             }
         }        
     }
